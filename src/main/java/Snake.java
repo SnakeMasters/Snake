@@ -12,8 +12,7 @@ public class Snake extends JFrame {
         MyPanel myPanel = new MyPanel();
 
         frame.add(myPanel);
-        frame.setSize(850, 700);
-        frame.setBackground(Color.WHITE);
+        frame.setSize(950, 700);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(3);
         frame.setVisible(true);
