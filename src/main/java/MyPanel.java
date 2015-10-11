@@ -88,8 +88,10 @@ public class MyPanel extends JPanel implements KeyListener {
                 4, 4, 10, 10);
         g.fillRoundRect(body.get(n - 1).y * Consts.nodeHeight + 34, body.get(n - 1).x * Consts.nodeWeight + 28,
                 4, 4, 10, 10);
-        if (isOver)
+        if (isOver) {
+            System.out.println("Game Over!!!");
             System.exit(0);
+        }
 
         Point head = body.get(n - 1);
         Point tail = body.get(0);
