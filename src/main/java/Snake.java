@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
 
 /**
  * Created by ankhbayarazzaya on 10/11/15.
@@ -7,11 +9,13 @@ public class Snake extends JFrame {
 
     public static void main(String[] args) {
         JFrame frame = new Snake();
-        frame.add(new MyPanel());
-        frame.setSize(800, 600);
+        MyPanel myPanel = new MyPanel();
+
+        frame.add(myPanel);
+        frame.setSize(850, 700);
+        frame.setBackground(Color.WHITE);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(3);
         frame.setVisible(true);
     }
 }
-
